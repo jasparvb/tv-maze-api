@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+  <head>
+    <title>TV Maze</title>
+    <link rel="stylesheet"
+      href="https://unpkg.com/bootstrap/dist/css/bootstrap.css">
+  </head>
+  <body>
+    <style>
+      .episode {
+          border-radius: 0 0 .25rem .25rem;
+      }
+    </style>
+    <div class="container">
+
+    <h1 class="display-1">TV Maze</h1>
+    <p>Search for your favorite TV shows using the TV Maze API</p>
+
+    <form class="form-inline" id="search-form">
+      <input class="form-control" id="search-query" placeholder="Search for a TV show">
+      <button class="btn btn-primary mx-2" type="submit">Go!</button>
+    </form>
+
+    <div class="row mt-3" id="shows-list">
+    </div>
+
+    <section class="mb-5" style="display: none" id="episodes-area">
+      <h2>Episodes</h2> 
+      <ul id="episodes-list">
+      </ul>
+    </section>  
+
+    <script src="http://unpkg.com/jquery"></script>
+    <script src="http://unpkg.com/axios/dist/axios.js"></script>
+    <script src="tvmaze.js"></script>
+
+    </div>
+
+  </body>
+</html>
